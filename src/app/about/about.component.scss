@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Inter Regular";
+  src: url("../../assets/fonts/Inter-Regular.ttf");
+}
+
+.about {
+  height: 65vh;
+  background-color: #7b9400;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.tagline {
+  margin-top: 0;
+  font-family: "Cormorant Bold";
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card {
+    color: #5a6815;
+    background-color: #f0f3e0;
+    padding: 20px;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 15px;
+    position: absolute;
+
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+    }
+    p {
+      font-family: "Inter Regular";
+    }
+  }
+}

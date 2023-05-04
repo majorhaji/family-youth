@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Inter Semi-Bold";
+  src: url("../../assets/fonts/Inter-SemiBold.ttf");
+}
+
+.header {
+  height: 60vh;
+  background-color: #eff7fa;
+  color: #1f808e;
+  padding: 10vw;
+}
+
+.tagline {
+  margin: 0;
+  font-family: "Cormorant Bold";
+  position: absolute;
+  width: 90%;
+  font-size: 100px;
+}
+
+.better-life {
+  margin-left: 100px;
+}
+
+.intro {
+  width: 30vw;
+  text-align: start;
+  position: absolute;
+  left: 55%;
+  top: 60%;
+  font-size: 25px;
+  font-family: "Inter Semi-Bold";
+}
