@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # family-youth
 
-family and youth wellbeing website
+family and youth wellbeing website.
