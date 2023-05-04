@@ -1,6 +1,6 @@
 [build]
   publish = "dist/family-youth"
-  command = "ng build --prod"
+  command = "ng build --configuration=production"
 
 [[redirects]]
   from = "/*"
