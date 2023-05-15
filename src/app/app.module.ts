@@ -10,9 +10,10 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, HeaderComponent, AboutComponent, TestimonialsComponent, CoursesComponent, FooterComponent, ContactComponent],
+  declarations: [AppComponent, NavComponent, HeaderComponent, AboutComponent, TestimonialsComponent, CoursesComponent, FooterComponent, ContactComponent, IntroComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
