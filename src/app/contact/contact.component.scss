@@ -1,0 +1,53 @@
+.contact {
+  height: 85vh;
+  background-color: #06641ada;
+  padding: 30px;
+  h4 {
+    font-family: "Inter Semi-Bold";
+    color: #bfbcbc;
+    text-align: center;
+  }
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #ffffff;
+    h1 {
+      font-family: "Cormorant Bold Italic";
+    }
+
+    h3 {
+      font-family: "Inter Regular";
+    }
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .submit {
+    margin: 20px;
+    width: 20vw;
+    align-self: center;
+    height: 5vh;
+  }
+  input,
+  #message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #bfbcbc;
+    background-color: inherit;
+    font-family: "Inter Semi-Bold";
+    color: white;
+  }
+
+  .submit {
+    width: 75vw;
+    height: 10vh;
+  }
+}
+
+::placeholder {
+  color: #bfbcbc;
+}
