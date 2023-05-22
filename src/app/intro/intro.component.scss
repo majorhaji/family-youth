@@ -1,12 +1,55 @@
 #intro {
-  height: 100vh;
+  height: 150vh;
   font-family: "Cormorant Bold";
+  background-color: rgb(160, 94, 1);
+  color: rgb(253, 245, 233);
 
   h1 {
     margin: 0;
     padding: 0;
-    text-align: center;
 
     position: absolute;
+  }
+
+  #let {
+    font-size: 70px;
+  }
+
+  #in-learning {
+    font-size: 45px;
+    top: 121vh;
+    right: 0vh;
+  }
+
+  #communicate {
+    font-size: 30px;
+    top: 130vh;
+  }
+
+  #effectively {
+    font-size: 23px;
+    top: 136vh;
+    left: 40vw;
+  }
+
+  .intro-paragraph {
+    position: absolute;
+    top: 140vh;
+    font-family: "Inter Medium";
+    padding: 30px;
+
+    p {
+      background-color: rgb(253, 245, 233);
+      color: rgb(160, 94, 1);
+      margin-top: 40px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    :nth-child(2) {
+      color: black;
+      background-color: inherit;
+      font-size: 30px;
+      font-family: "Inter Medium";
+    }
   }
 }
