@@ -36,8 +36,50 @@ a {
 }
 
 .logo {
-  max-width: 60px;
-  margin-top: 22px;
+  max-width: 40px;
   align-self: center;
   position: absolute;
+}
+
+.menu {
+  position: absolute;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+
+  .initial {
+    height: 1px;
+    width: 30px;
+    padding: 2px;
+    margin: 2px;
+    background-color: #ffffff;
+  }
+}
+.menu-items {
+  background-color: #a7c9ce;
+  margin-top: 0px;
+  list-style: none;
+  font-family: "Inter Bold";
+  color: white;
+  font-style: italic;
+  padding: 25px;
+  text-align: center;
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  top: 8vh;
+
+  hr {
+    height: 5px;
+    background-color: white;
+    border: none;
+  }
+
+  li {
+    padding: 30px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
