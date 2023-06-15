@@ -5,19 +5,38 @@
 
 .about {
   min-height: 100vh;
-  background-color: #7b9400;
+  background-color: #333333;
   color: #ffffff;
   padding: 20px;
   h3 {
     font-family: "Inter Regular";
-    font-size: 27px;
+    font-size: 34px;
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(134, 0, 255, 1) 0%,
+      rgba(25, 0, 148, 1) 35%,
+      rgb(0, 0, 0) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  p {
-    font-family: "Inter Regular";
-    font-size: larger;
+
+  .card {
+    text-align: center;
+    img {
+      max-width: 80vw;
+    }
+    p {
+      color: #ffffff;
+    }
   }
 }
 
+p {
+  font-family: "Inter Regular";
+  font-size: larger;
+  color: #000000;
+}
 .tagline {
   margin-top: 0;
   font-family: "Cormorant Bold";

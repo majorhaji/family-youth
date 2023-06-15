@@ -1,8 +1,8 @@
 #intro {
-  height: 150vh;
+  height: 220vh;
   font-family: "Cormorant Bold";
-  background-color: rgb(160, 94, 1);
-  color: rgb(253, 245, 233);
+  background-color: rgb(253, 245, 233);
+  color: rgb(160, 94, 1);
 
   h1 {
     margin: 0;
@@ -33,24 +33,25 @@
     left: 40vw;
   }
 
-  .intro-paragraph {
+  .intro {
     position: absolute;
     top: 140vh;
     font-family: "Inter Medium";
     padding: 30px;
 
-    p {
-      background-color: rgb(253, 245, 233);
-      color: rgb(160, 94, 1);
+    .paragraph {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgb(160, 94, 1);
+      color: rgb(253, 245, 233);
       margin-top: 40px;
-      padding: 20px;
+      padding: 5px;
       border-radius: 10px;
-    }
-    :nth-child(2) {
-      color: black;
-      background-color: inherit;
-      font-size: 30px;
-      font-family: "Inter Medium";
+      img {
+        max-width: 300px;
+        align-self: center;
+      }
     }
   }
 }
