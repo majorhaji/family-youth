@@ -24,12 +24,13 @@ export class ContactComponent {
     this.http
       .post(
         'https://backend-for-family-youth-wellbeing.onrender.com/contact',
-        formData
+        formData,
+        { responseType: 'text' }
       )
       .subscribe(
-        () => {
-          console.log('Message sent successfully!');
-          // Add any success message or further actions here
+        (response: any) => {
+          console.log('Message sent successfully!', response);
+          // Handle the response here
         },
         (error) => {
           console.error('An error occurred:', error);
