@@ -1,5 +1,5 @@
 import { Component, Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { tap, catchError } from 'rxjs/operators';
 
 @Injectable()
@@ -27,7 +27,7 @@ export class ContactComponent {
       .post(
         'https://backend-for-family-youth-wellbeing.onrender.com/contact',
         formData,
-        { responseType: 'text' }
+        { observe: 'response' }
       )
       .pipe(
         tap(() => {
@@ -40,6 +40,16 @@ export class ContactComponent {
           throw error; // Rethrow the error to propagate it to the error handler
         })
       )
-      .subscribe();
+      .subscribe(
+        (response: HttpResponse<any>) => {
+          console.log('Message sent successfully!', response);
+          // Access the response body or headers using response.body or response.headers
+          // Add any success message or further actions here
+        },
+        (error) => {
+          console.error('An error occurred:', error);
+          // Handle the error and display an error message
+        }
+      );
   }
 }
