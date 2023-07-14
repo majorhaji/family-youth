@@ -6,7 +6,7 @@
       <br />
       <h3>a message</h3>
     </div>
-    <form class="contact-form" (ngSubmit)="submitForm()">
+    <form class="contact-form" (submit)="submitForm()">
       <input
         type="text"
         id="first-name"
@@ -40,7 +40,7 @@
         placeholder="Your Message"
       ></textarea>
 
-      <button class="submit" value="submit">SEND</button>
+      <button class="submit" type="submit">SEND</button>
     </form>
   </div>
 </div>
