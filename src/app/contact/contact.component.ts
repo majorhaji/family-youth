@@ -27,7 +27,7 @@ export class ContactComponent {
       .post(
         'https://backend-for-family-youth-wellbeing.onrender.com/contact',
         formData,
-        { observe: 'response' }
+        { responseType: 'text' }
       )
       .pipe(
         tap(() => {
@@ -41,10 +41,9 @@ export class ContactComponent {
         })
       )
       .subscribe(
-        (response: HttpResponse<any>) => {
+        (response: any) => {
           console.log('Message sent successfully!', response);
-          // Access the response body or headers using response.body or response.headers
-          // Add any success message or further actions here
+          // Handle the response here
         },
         (error) => {
           console.error('An error occurred:', error);
